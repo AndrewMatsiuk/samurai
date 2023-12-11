@@ -1,3 +1,10 @@
+import { MyPosts } from './MyPosts/MyPosts';
+
 export const Profile = () => {
-  return <div className='content'>Main content</div>;
+  return (
+    <div>
+      Main content
+      <MyPosts />
+    </div>
+  );
 };

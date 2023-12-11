@@ -1,0 +1,14 @@
+.nav {
+  padding: 20px;
+  grid-area: nav;
+  background-color: rgb(164, 196, 26);
+}
+
+.item a {
+  color: white;
+  text-decoration: none;
+}
+
+.item a:focus {
+  color: gold;
+}
