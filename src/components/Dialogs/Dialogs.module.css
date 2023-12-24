@@ -1,3 +1,16 @@
-.item {
-  color: blue;
+.dialogs {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+
+.dialogsItems {
+  padding: 10px;
+}
+
+.massages {
+  padding: 10px;
+}
+
+.massages a:focus {
+  color: gold;
 }

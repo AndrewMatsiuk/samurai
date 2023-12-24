@@ -2,15 +2,25 @@ import s from './MyPosts.module.css';
 import { Post } from './Post/Post';
 
 export const MyPosts = () => {
+  let postsData = [
+    { id: 1, message: 'Hi post 1', likes: 15 },
+    { id: 2, message: 'Hi post 2', likes: 2 },
+  ];
+
+  let postsElements = postsData.map((p) => {
+    return <Post message={p.message} likes={p.likes} />;
+  });
+
   return (
-    <div className={s.item}>
-      My post
+    <div className={s.postsBlock}>
+      <h2> My post</h2>
       <div>New post</div>
-      <input></input>
+      <div>
+        {' '}
+        <textarea></textarea>
+      </div>
       <button>Add post</button>
-      <Post massage={'1 post'} likes={15} />
-      <Post massage={'2 post'} likes={20} />
-      <div>2 post</div>
+      <div className={s.posts}>{postsElements}</div>
     </div>
   );
 };
