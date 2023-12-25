@@ -7,7 +7,15 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App
+      messages={[
+        { value: 'Hey111111111111111' },
+        { value: 'Hey1' },
+        { value: 'Hey2' },
+        { value: 'Hey3' },
+        { value: 'Hey4' },
+      ]}
+    />
   </React.StrictMode>
 );
 

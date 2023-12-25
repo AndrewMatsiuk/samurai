@@ -10,7 +10,8 @@ import {
 } from './components';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 
-const App = () => {
+const App = (props) => {
+  const { dialogs, messages } = props;
   return (
     <BrowserRouter>
       <div className='app-wrapper'>
@@ -18,7 +19,10 @@ const App = () => {
         <NavBar />
         <div className='app_wrapper-content'>
           <Routes>
-            <Route element={<Dialogs />} path='/massages' />
+            <Route
+              element={<Dialogs dialogs={dialogs} messages={messages} />}
+              path='/massages'
+            />
             <Route element={<Profile />} path='/profile' />
             <Route element={<News />} path='/news' />
             <Route element={<Music />} path='/music' />
