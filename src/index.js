@@ -14,6 +14,8 @@ root.render(
         { value: 'Hey2' },
         { value: 'Hey3' },
         { value: 'Hey4' },
+        { value: 'Hey5' },
+        { value: 'Hey27-lesson' },
       ]}
     />
   </React.StrictMode>
