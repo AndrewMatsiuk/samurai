@@ -14,3 +14,9 @@
 .massages a:focus {
   color: gold;
 }
+
+.inputMessage {
+  display: flex;
+  margin-left: 5px;
+  gap: 5px;
+}
